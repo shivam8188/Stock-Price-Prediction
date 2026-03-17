@@ -2,5 +2,5 @@ services:
   - type: web
     name: stock-price-prediction
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install -r requirements.txt && python src/data_loader.py && python src/train_model.py
     startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0 --server.headless true
