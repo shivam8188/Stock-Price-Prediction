@@ -1,6 +1,9 @@
-numpy
+
+numpy==1.26.4
 pandas
 matplotlib
 scikit-learn
 yfinance
 streamlit
+tensorflow-cpu==2.15.0
+h5py
