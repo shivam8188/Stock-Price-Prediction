@@ -86,5 +86,5 @@ model.add(Dense(1))
 model.compile(optimizer="adam", loss="mean_squared_error")
 model.fit(X, y, epochs=20, batch_size=32)
 
-model.save(os.path.join(BASE_DIR, "models", "lstm_model.h5"))
+model.save(os.path.join(BASE_DIR, "models", "lstm_model.keras"))
 print("✅ Model saved successfully!")

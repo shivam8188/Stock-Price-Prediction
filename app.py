@@ -125,7 +125,7 @@ try:
 
     # Load model using absolute path
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    model = load_model(os.path.join(BASE_DIR, "models", "lstm_model.h5"))
+    model = load_model(os.path.join(BASE_DIR, "models", "lstm_model.keras"))
 
     # Predict next 30 days
     sequence = list(scaled[-60:].flatten())
